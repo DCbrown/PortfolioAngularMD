@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
