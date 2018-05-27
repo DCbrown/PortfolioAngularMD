@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+      <div *ngFor="let testimonial of testimonials" class="card text-center {{testimonial.class}}" style="width: 22rem;">
+          <div class="card-header success-color white-text">
+              <h3>{{testimonial.name}}</h3>
+          </div>
+          <div class="card-body">
+              <h4 class="card-title"><img src="{{testimonial.img}}" /></h4>
+              <p class="card-text"><b>"{{testimonial.qoute}}"</b></p>
+          </div>
+          <div class="card-footer text-muted success-color white-text">
+              <p class="mb-0">{{testimonial.company}}</p>
+          </div>
+      </div>
+  </div>
+</div>
+<br/>
+<br/>  

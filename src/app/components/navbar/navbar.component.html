@@ -3,33 +3,34 @@
 <mdb-navbar class="fixed-top" SideClass="navbar navbar-expand-lg navbar-dark info-color-dark">
            
   <!-- Navbar brand -->
-  <logo><a class="navbar-brand" routerLink=""><i><b><u>Donovan C Brown</u></b></i></a></logo>
+  <logo><a class="navbar-brand" routerLink=""><img src="../../../assets/img/DonovanLogo2.png"/></a></logo>
 
   <!-- Collapsible content -->
     <links>      
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-          <a routerLink="projects" class="nav-link waves-light" mdbWavesEffect>Projects</a>
+          <a routerLink="projects" routerLinkActive="active" class="nav-link waves-light"mdbWavesEffect>Projects</a>
       </li>
       <li class="nav-item">
-          <a class="nav-link waves-light" mdbWavesEffect>Testimonials</a>
+          <a routerLink="testimonials" routerLinkActive="active" class="nav-link waves-light" mdbWavesEffect>Testimonials</a>
       </li>
       <li class="nav-item">
-          <a routerLink="contact" class="nav-link waves-light" mdbWavesEffect>Contact</a>
+          <a routerLink="contact" routerLinkActive="active" class="nav-link waves-light" mdbWavesEffect>Contact</a>
       </li>
 
       <!-- Dropdown -->
+      <!--
       <li class="nav-item dropdown" dropdown>
           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
           Favs<span class="caret"></span></a>
           <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Developers</a>
+              <a routerLink="people" class="dropdown-item waves-light" mdbWavesEffect href="#">People</a>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Courses</a>
               <a class="dropdown-item waves-light" mdbWavesEffect href="#">Tools</a>
           </div>
       </li>
-
+      -->  
     </ul>
     <!-- Links -->
   </links>

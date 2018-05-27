@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let peoples of people" class="card text-center animated lightSpeedIn" style="width: 22rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{peoples.name}}</h5>
+                <img src="{{peoples.img}}"/>
+            </div>
+            <div class="card-footer">
+                <a *ngIf="peoples.website" href="{{peoples.website}}" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+                <a *ngIf="peoples.twitter" href="{{peoples.twitter}}" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                <a *ngIf="peoples.youtube" href="{{peoples.youtube}}" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                <a *ngIf="peoples.instagram" href="{{peoples.instagram}}" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <br/>
+  <br/>  
+   

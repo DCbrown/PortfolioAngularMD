@@ -8,6 +8,11 @@ import { AppRoutingModule } from './/app-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { DataService } from './services/data/services.service';
+import { FooterComponent } from './components/footer/footer.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { PeopleComponent } from './components/people/people.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,15 +21,21 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     NavbarComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent,
+    TestimonialsComponent,
+    PeopleComponent,
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule 
   ],
+  exports: [HomeComponent], 
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
