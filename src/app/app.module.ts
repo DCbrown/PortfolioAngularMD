@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { PeopleComponent } from './components/people/people.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MDBBootstrapModule.forRoot(),
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule 
+    FormsModule,
+    HttpClientModule 
   ],
   exports: [HomeComponent], 
   schemas: [ NO_ERRORS_SCHEMA ],

@@ -17,5 +17,6 @@ export class PeopleComponent implements OnInit {
     this.people = this.dataService.getPeople();
   }
 
+  
 
 }
