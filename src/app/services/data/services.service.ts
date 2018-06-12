@@ -4,6 +4,7 @@ import { Testimonials } from '../../models/Testimonials';
 import { People } from '../../models/People';
 import { Courses } from '../../models/Courses';
 import { Tools } from '../../models/Tools';
+import { Experience } from '../../models/Experience';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
@@ -16,6 +17,7 @@ export class DataService {
   people: People[];
   courses: Courses[];
   tools:Tools[];
+  experience:Experience[];
   
 
   showProjects = [];
@@ -143,7 +145,7 @@ export class DataService {
     this.people = [
       {
         id:1,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/KyleP.jpg',
         name:'Kyle Prinsloo',
         website:'https://studywebdevelopment.com',
         twitter:'https://twitter.com/study_web_dev',
@@ -152,7 +154,7 @@ export class DataService {
       },
       {
         id:2,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/LaurenceB.jpg',
         name:'Laurence Bradford',
         website:'https://learntocodewith.me/',
         twitter:'https://twitter.com/learncodewithme',
@@ -161,7 +163,7 @@ export class DataService {
       },
       {
         id:3,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/Candy.jpg',
         name:'Coding Commanders',
         website:'http://www.codingcommanders.com/',
         twitter:'https://twitter.com/codingCommander',
@@ -170,7 +172,7 @@ export class DataService {
       },
       {
         id:4,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/RTC.jpg',
         name:'Real Tough Candy',
         website:'https://realtoughcandy.github.io/Portfolio/',
         twitter:'https://twitter.com/realtoughcandy',
@@ -179,7 +181,7 @@ export class DataService {
       },
       {
         id:5,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/ChrisS.jpg',
         name:'Chris Sean',
         website:'',
         twitter:'https://twitter.com/RealChrisSean',
@@ -188,7 +190,7 @@ export class DataService {
       },
       {
         id:6,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/JoeS.jpg',
         name:'Coding Phase',
         website:'http://www.codingphase.com/',
         twitter:'https://twitter.com/codingphase',
@@ -197,7 +199,7 @@ export class DataService {
       },
       {
         id:7,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/BradT.jpg',
         name:'Traversy Media',
         website:'https://www.traversymedia.com/',
         twitter:'http://www.twitter.com/traversymedia',
@@ -206,7 +208,7 @@ export class DataService {
       },
       {
         id:8,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/AaronB.jpg',
         name:'Aaron in Beta',
         website:'',
         twitter:'https://twitter.com/937aaron',
@@ -215,7 +217,7 @@ export class DataService {
       },
       {
         id:9,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/StefM.jpg',
         name:'Stefan Mischook',
         website:'https://www.killersites.com/',
         twitter:'https://twitter.com/killersites',
@@ -224,7 +226,7 @@ export class DataService {
       },
       {
         id:10,
-        img:'../../assets/people/kyle-prinsloo.jpg',
+        img:'../../assets/people/devs/PeterCC.jpg',
         name:'Coding Connections',
         website:'',
         twitter:'https://twitter.com/CodingConnectio',
@@ -256,8 +258,14 @@ export class DataService {
     {
       id:4,
       img:'',
-      name:'TheOdinProject.com',
-      link:'https://www.theodinproject.com',
+      name:'CodingPhase.com',
+      link:'http://codingphase.com/',
+    },
+    {
+      id:5,
+      img:'',
+      name:'CodingCommanders.com',
+      link:'http://www.codingcommanders.com/',
     },
     {
       id:5,
@@ -383,7 +391,30 @@ export class DataService {
       link:'https://hangouts.google.com/'
     },
 
+  ],
 
+  this.experience =[
+    {
+      company:"Continental Structural Plastics",
+      title: "Manufacturing Systems Developer (Contract)",
+      location: "Auburn Hills, MI",
+      dates: "Mar 2018 – Present",
+      skills: ["HTML5", "CSS3", "JavaScript(ES6)", "Angular 2 +", "Mongodb", "Express", "Node.js"]
+    },
+    {
+      company:"Advantage Marketing Solutions",
+      title: "Web Developer (Contract)",
+      location: "Farmington Hills, MI",
+      dates: "Dec 2017 – April 2018 (Contract)",
+      skills: ["HTML5", "CSS3", "JavaScript(ES6)", "jQuery", "PHP", "MySQL","WordPress"]
+    },
+    {
+      company:"Detroit School For Digital Technology",
+      title: "Technical Instructor / Web Developer",
+      location: "Detroit Michigan, MI",
+      dates: "Jul 2017 – Dec 2017",
+      skills: ["HTML5", "CSS3", "JavaScript(ES6)", "jQuery", "PHP", "MySQL","WordPress", "Insrtcuting"]
+    },
   ]
 
   }

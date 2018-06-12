@@ -11,42 +11,28 @@ import {HttpErrorResponse} from '@angular/common/http';
 
 export class ContactComponent implements OnInit {
 
-  rForm: FormGroup;
-  post:any;
+  form_name: string;
+  form_email: string;
+  form_msg: string;
+
   public data:any=[]                     
- 
-  name:string = '';
-  email:string = '';
-  message:string = '';
-
-  form_name;
-  form_email;
-  form_msg;
-
-  submit:boolean = false;
   
   constructor(private fb: FormBuilder, private http: HttpClient ) { 
 
-   
-
+  
   }
 
   ngOnInit(){
-    this.createForm();
+    
   }
 
-  createForm(){
-    this.rForm = this.fb.group({
-      'name' : ['', Validators.required],
-      'email': ['', Validators.required],
-      'message' : ['', Validators.required]
-    });
-  }
-  
-  send(){
-    let alert_msg = document.getElementById('alert-msg');
+  click(){
+    let alert_msg = document.getElementById('show');
+    let formDiv = document.getElementById('form');
     alert_msg.classList.remove("hidden");
-  }  
+    formDiv.classList.add("hidden");
+    
+  }
 
 }
 

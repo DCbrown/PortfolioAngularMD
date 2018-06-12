@@ -14,6 +14,11 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { PeopleComponent } from './components/people/people.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FeedComponent } from './components/feed/feed.component';
+ 
+// Import ngx-twitter-timeline
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+import { ExperianceComponent } from './components/experiance/experiance.component';
 
 
 @NgModule({
@@ -26,6 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     TestimonialsComponent,
     PeopleComponent,
+    FeedComponent,
+    ExperianceComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule 
+    HttpClientModule,
+    NgxTwitterTimelineModule 
   ],
   exports: [HomeComponent], 
   schemas: [ NO_ERRORS_SCHEMA ],

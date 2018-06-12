@@ -1,0 +1,19 @@
+
+<div class="animated fadeInLeft container">  
+  <h1 class="text-center"><u>Whats Donovan Been Up To Lately?</u></h1>  
+  <br/>    
+  <div class="row">
+    <div class="col-sm-8 offset-md-2">
+        <ngx-twitter-timeline 
+        [data]="{
+            sourceType: 'url',
+            url: 'https://twitter.com/browncdonovan'}"
+        [opts]="{
+            tweetLimit: 5
+        }"
+    ></ngx-twitter-timeline>
+    </div>
+  </div>
+</div>  
+<br/>
+<br/>  

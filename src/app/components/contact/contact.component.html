@@ -2,16 +2,30 @@
     <h1 class="text-center"><u>Contact Donovan</u></h1>
     <h4 class="text-center">...Or just say Hi?</h4>  
     <form class="animated rotateInUpLeft" id="contact-form" method="post" role="form">
-            <div id="alert-msg" class="alert alert-success hidden">
+            <div id="show" class="hidden">
+                <div id="alert-msg" class="alert alert-success">
                 Thank you! message sent successfully. I'll be in contact with you soon.
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </div>
-            <div class="controls">
+            <div id="form" class="controls">
                 <input type="hidden" name="contact_number">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_name">Name *</label>
-                            <input id="form_name" type="text" name="user_name" [(ngModel)]='form_name' class="form-control" placeholder="Please enter your name *" required="required" data-error="Firstname is required.">
+                            <input id="form_name"  type="text" name="user_name" [(ngModel)]='form_name' class="form-control" placeholder="Please enter your name *" required="required">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -20,7 +34,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_email">Email *</label>
-                            <input id="form_email" type="email"  name="user_email" [(ngModel)]='form_email' class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                            <input id="form_email"  type="email"  name="user_email" [(ngModel)]='form_email' class="form-control" placeholder="Please enter your email *" required="required">
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -29,12 +43,12 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label for="form_message">Message *</label>
-                            <textarea id="form_message" name="contact" class="form-control" [(ngModel)]='form_msg' placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                            <textarea id="form_message"  name="contact" class="form-control" [(ngModel)]='form_msg' placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <input type="submit" [disabled]="!form_name || !form_email || !form_msg" class="btn btn-success btn-send" (click)="send()">
+                            <input [disabled]="!form_name || !form_email || !form_msg" type="submit" class="btn btn-success btn-send" (click)="click();" >
                         <br />
                         <p>All fields <u>must</u> be filled out to submit the form *</p>
                     </div>
