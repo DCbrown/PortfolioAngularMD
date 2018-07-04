@@ -4,38 +4,30 @@
 <div class="row">
   <div class="animated slideInDown col-md-4">
     <div class="card">
-        <h3 class="card-header primary-color white-text text-center">Front-End</h3>
+        <h3 class="card-header primary-color white-text text-center"><i class="fa fa-code" aria-hidden="true"></i> Front-End <i class="fa fa-code" aria-hidden="true"></i></h3>
         <div class="card-body">
             <div *ngFor="let frontEndTools of frontEnd" class="list-group">
-                <a href="{{frontEndTools.link}}" class="text-center list-group-item waves-light" mdbWavesEffect>{{frontEndTools.name}}</a>
+                <a href="{{frontEndTools.link}}" target="_blank" class="text-center list-group-item waves-light" mdbWavesEffect>{{frontEndTools.name}}</a>
             </div>
         </div>
     </div>
   </div>
   <div class="animated slideInUp col-md-4">
     <div class="card">
-        <h3 class="card-header success-color white-text text-center">Back-End</h3>
+        <h3 class="card-header success-color white-text text-center"><i class="fa fa-server" aria-hidden="true"></i> Back-End <i class="fa fa-server" aria-hidden="true"></i></h3>
         <div class="card-body">
-            <div class="list-group">
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Cras justo odio</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Morbi leo risus</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Vestibulum at eros</a>
+            <div *ngFor="let backEndTools of backEnd" class="list-group">
+                <a href="{{backEndTools.link}}" target="_blank" class="text-center list-group-item waves-light" mdbWavesEffect>{{backEndTools.name}}</a>
             </div>
         </div>
     </div>
     </div>
     <div class="animated slideInDown col-md-4">
     <div class="card">
-        <h3 class="card-header warning-color white-text">Msc</h3>
+        <h3 class="card-header text-center warning-color white-text"><i class="fa fa-cogs" aria-hidden="true"></i> Miscellaneous <i class="fa fa-cogs" aria-hidden="true"></i></h3>
         <div class="card-body">
-            <div class="list-group">
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Cras justo odio</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Dapibus ac facilisis in</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Morbi leo risus</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Vestibulum at eros</a>
+            <div *ngFor="let mscTools of msc" class="list-group">
+                <a href="{{mscTools.link}}" target="_blank" class="text-center list-group-item waves-light" mdbWavesEffect>{{mscTools.name}}</a>
             </div>
         </div>
     </div>

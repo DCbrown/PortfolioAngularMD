@@ -177,10 +177,20 @@ export class DataService {
         id:4,
         img:'../../assets/people/devs/RTC.jpg',
         name:'Real Tough Candy',
-        website:'https://realtoughcandy.github.io/Portfolio/',
+        website:'https://realtoughcandy.gtithub.io/Portfolio/',
         twitter:'https://twitter.com/realtoughcandy',
         youtube:'https://www.youtube.com/channel/UC54NcJvLCvM2CNaBjd5j6HA',
         instagram:'',
+
+      },
+      {
+        id:4.4,
+        img:'../../assets/people/devs/Jenna.jpg',
+        name:'Jenna Malone',
+        website:'https://www.jennamalonecreates.com/',
+        twitter:'https://twitter.com/jenna_creates?lang=en',
+        youtube:'https://www.youtube.com/channel/UCHui267J51nimo6FXxPIW-Q',
+        instagram:'https://www.instagram.com/jenna_creates/',
       },
       {
         id:5,
@@ -412,25 +422,154 @@ export class DataService {
     },
     {
       id:7,
-      name:'Font-awesome',
+      name:'Font-Awesome',
       link:'https://fontawesome.com/v4.7.0/'
+    },
+    {
+      id:8,
+      name:'CSS-Grid',
+      link:'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout'
+    },
+    {
+      id:9,
+      name:'Flexbox',
+      link:'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox'
     }
+
   ]
   
   this.backEnd = [
     {
       id:1,
       name:'XAMMP',
-      link:''
+      link:'https://www.apachefriends.org/index.html'
     },
     {
       id:2,
-      name:'XAMMP',
-      link:''
-    }
+      name:'MongoBD Compass',
+      link:'https://www.mongodb.com/products/compass'
+    },
+    {
+      id:3,
+      name:'NodeJS',
+      link:'https://nodejs.org/en/'
+    },
+    {
+      id:4,
+      name:'Express',
+      link:'https://expressjs.com/'
+    },
+    {
+      id:5,
+      name:'Cyberduck',
+      link:'https://cyberduck.io'
+    } 
+  ]
+  
+  this.msc = [
+    {
+      id:1,
+      name:'Visual Studio Code',
+      link:'https://code.visualstudio.com'
+    },
+    {
+      id:2,
+      name:'WordPress',
+      link:'https://wordpress.org/download/'
+    },
+    {
+      id:2-2,
+      name:'Gulpjs',
+      link:'https://gulpjs.com/'
+    },
+    {
+      id:3,
+      name:'Trello',
+      link:'https://trello.com/'
+    },
+    {
+      id:4,
+      name:'Google',
+      link:'https://google.com/'
+    },
+    {
+      id:5,
+      name:'Stack Overflow',
+      link:'https://stackoverflow.com'
+    },
+    {
+      id:6,
+      name:'Opera',
+      link:'https://www.opera.com'
+    },
+    {
+      id:7,
+      name:'Firefox',
+      link:'https://www.mozilla.org/en-US/firefox/'
+    },
+    {
+      id:8,
+      name:'Chrome',
+      link:'https://www.google.com/chrome/'
+    },
+    {
+      id:10,
+      name:'Angular CLI',
+      link:'https://cli.angular.io'
+    },
+    {
+      id:11,
+      name:'Linux (Ubuntu)',
+      link:'https://www.ubuntu.com/'
+    },
+    {
+      id:12,
+      name:'Android Studio',
+      link:'https://developer.android.com/studio/'
+    },
+    {
+      id:13,
+      name:'Dart',
+      link:'https://www.dartlang.org/'
+    },
+    {
+      id:14,
+      name:'Flutter',
+      link:'https://flutter.io/'
+    },
+    {
+      id:15,
+      name:'GitHub',
+      link:'https://github.com/'
+    },
+    {
+      id:16,
+      name:'Photoshop',
+      link:'https://www.adobe.com/products/photoshopfamily.html'
+    },
+    {
+      id:17,
+      name:'Google Drive',
+      link:'https://www.google.com/drive/'
+    },
+    {
+      id:18,
+      name:'Google Docs',
+      link:'https://www.google.com/docs/about/'
+    },
+    {
+      id:19,
+      name:'Google Hangouts',
+      link:'https://hangouts.google.com/'
+    },
+    {
+      id:20,
+      name:'Skype',
+      link:'https://www.skype.com/en/'
+    },
   ]
 
-  this.experience =[
+  this.experience = [
     {
       company:"Continental Structural Plastics",
       title: "Manufacturing Systems Developer (Contract)",
@@ -478,6 +617,13 @@ export class DataService {
 
   getFrontEnd(): FrontEnd[]{
     return this.frontEnd;
+  }
+
+  getBackEnd(): BackEnd[]{
+    return this.backEnd;
+  }
+  getMsc(): Msc[]{
+    return this.msc;
   }
 
 
