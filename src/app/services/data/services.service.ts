@@ -3,7 +3,7 @@ import { Projects } from '../../models/Projects';
 import { Testimonials } from '../../models/Testimonials';
 import { People } from '../../models/People';
 import { Courses } from '../../models/Courses';
-import { Tools } from '../../models/Tools';
+import { Tools, FrontEnd, BackEnd, Msc } from '../../models/Tools';
 import { Experience } from '../../models/Experience';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
@@ -17,6 +17,9 @@ export class DataService {
   people: People[];
   courses: Courses[];
   tools:Tools[];
+  frontEnd:FrontEnd[];
+  backEnd:BackEnd[];
+  msc:Msc[];
   experience:Experience[];
   
 
@@ -290,108 +293,142 @@ export class DataService {
   this.tools = [
     {
       id:1,
-      img:'',
       name:'Visual Studio Code',
       link:'https://code.visualstudio.com'
     },
     {
       id:2,
-      img:'',
       name:'XAMPP',
       link:'https://www.apachefriends.org/index.html'
     },
     {
       id:3,
-      img:'',
       name:'Trello',
       link:'https://trello.com/'
     },
     {
       id:4,
-      img:'',
       name:'Google',
       link:'https://google.com/'
     },
     {
       id:5,
-      img:'',
       name:'Stack Overflow',
       link:'https://stackoverflow.com'
     },
     {
       id:6,
-      img:'',
       name:'Opera',
       link:'https://www.opera.com'
     },
     {
       id:7,
-      img:'',
       name:'Node.js',
       link:'https://nodejs.org/'
     },
     {
       id:8,
-      img:'',
       name:'Angular CLI',
       link:'https://cli.angular.io'
     },
     {
       id:10,
-      img:'',
       name:'Linux (Ubuntu)',
       link:'https://www.ubuntu.com/'
     },
     {
       id:11,
-      img:'',
       name:'Android Studio',
       link:'https://developer.android.com/studio/'
     },
     {
       id:12,
-      img:'',
       name:'Dart',
       link:'https://www.dartlang.org/'
     },
     {
       id:13,
-      img:'',
       name:'Flutter',
       link:'https://flutter.io/'
     },
     {
       id:14,
-      img:'',
       name:'GitHub',
       link:'https://github.com/'
     },
     {
       id:15,
-      img:'',
       name:'Photoshop',
       link:'https://www.adobe.com/products/photoshopfamily.html'
     },
     {
       id:16,
-      img:'',
       name:'Google Drive',
       link:'https://www.google.com/drive/'
     },
     {
       id:17,
-      img:'',
       name:'Google Docs',
       link:'https://www.google.com/docs/about/'
     },
     {
       id:18,
-      img:'',
       name:'Google Hangouts',
       link:'https://hangouts.google.com/'
     },
 
   ],
+
+  this.frontEnd = [
+    {
+      id:1,
+      name:'Bootstrap',
+      link:'https://getbootstrap.com/docs/4.0/getting-started/introduction/'
+    },
+    {
+      id:2,
+      name:'MDBootstrap',
+      link:'https://mdbootstrap.com'
+    },
+    {
+      id:3,
+      name:'Primeng',
+      link:'http://primefaces.org'
+    },
+    {
+      id:4,
+      name:'Angular 2 and up',
+      link:'https://angular.io'
+    },
+    {
+      id:5,
+      name:'jQuery',
+      link:'https://jquery.com/'
+    },
+    {
+      id:6,
+      name:'Sass',
+      link:'https://sass-lang.com/'
+    },
+    {
+      id:7,
+      name:'Font-awesome',
+      link:'https://fontawesome.com/v4.7.0/'
+    }
+  ]
+  
+  this.backEnd = [
+    {
+      id:1,
+      name:'XAMMP',
+      link:''
+    },
+    {
+      id:2,
+      name:'XAMMP',
+      link:''
+    }
+  ]
 
   this.experience =[
     {
@@ -432,7 +469,15 @@ export class DataService {
   }
 
   getCourses(): Courses[]{
-    return this.courses
+    return this.courses;
+  }
+
+  getExperience(): Experience[]{
+    return this.experience;
+  }
+
+  getFrontEnd(): FrontEnd[]{
+    return this.frontEnd;
   }
 
 

@@ -1,0 +1,45 @@
+<div class="container">
+  <h1 class="text-center">Favs: <u>Tools</u></h1>
+  <br>  
+<div class="row">
+  <div class="animated slideInDown col-md-4">
+    <div class="card">
+        <h3 class="card-header primary-color white-text text-center">Front-End</h3>
+        <div class="card-body">
+            <div *ngFor="let frontEndTools of frontEnd" class="list-group">
+                <a href="{{frontEndTools.link}}" class="text-center list-group-item waves-light" mdbWavesEffect>{{frontEndTools.name}}</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="animated slideInUp col-md-4">
+    <div class="card">
+        <h3 class="card-header success-color white-text text-center">Back-End</h3>
+        <div class="card-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Cras justo odio</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Morbi leo risus</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Vestibulum at eros</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="animated slideInDown col-md-4">
+    <div class="card">
+        <h3 class="card-header warning-color white-text">Msc</h3>
+        <div class="card-body">
+            <div class="list-group">
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Cras justo odio</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Morbi leo risus</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item waves-light" mdbWavesEffect>Vestibulum at eros</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>

@@ -19,6 +19,7 @@ import { FeedComponent } from './components/feed/feed.component';
 // Import ngx-twitter-timeline
 import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
 import { ExperianceComponent } from './components/experiance/experiance.component';
+import { ToolsComponent } from './components/tools/tools.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { ExperianceComponent } from './components/experiance/experiance.componen
     PeopleComponent,
     FeedComponent,
     ExperianceComponent,
+    ToolsComponent,
   ],
   imports: [
     BrowserModule,
