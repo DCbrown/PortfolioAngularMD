@@ -81,12 +81,12 @@ export class DataService {
         gitHubLink:'https://github.com/DCbrown/Bootstrap_Alexa_Theme'
       },
       { id: 6, 
-        title: 'Bootstrap WordPress Theme',  
+        title: 'Flourishing Property Solutions',  
         row: 2,
-        img:'../../assets/img/BootstrapWWordPress.png', 
-        description:'A custom WordPress theme with Bootstrap using WordPress, HTML, CSS, PHP and Twitter Boootstrap.', 
+        img:'../../assets/img/FPS.png', 
+        description:'A Metro Detroit Real Estate WordPress site I built for a client using WordPress, HTML, CSS, PHP.', 
         subject:'Web', 
-        liveLink:'http://wordpresswbootstrap-com.stackstaging.com/', 
+        liveLink:'http://www.flourishingpropertysolutions.com', 
         gitHubLink:false
       },
       { id: 7, 
@@ -105,7 +105,7 @@ export class DataService {
         description:'Developed a single page Bootstrap Theme featuring Amazon’s Alexa that uses JavaScript and Query Animations. Using HTML, CSS, jQuery, Bootstrap and the ScrollRevealjs JavaScript library.', 
         subject:'Web', 
         liveLink: false, 
-        gitHubLink:'https://dcbrown.github.io/Bootstrap_Alexa_Theme/'
+        gitHubLink:'https://github.com/DCbrown/CV-Angular-App'
       },
       { id: 9, 
         title: 'Employee Registration', 
@@ -143,6 +143,14 @@ export class DataService {
         company:'Deputy Director of Your Center and Creative Coordinator of the KISS@ project',
         class:'animated zoomInRight'
       },
+      {
+        id:4,
+        img:'../../assets/people/adrian.jpg',
+        qoute:'Our company has had the pleasure of working with Donovan and it was a great experience! He was very knowledgeable and quick when helping us build our site at www.flourishingpropertysolutions.com',
+        name:'Adrian Sellers',
+        company:'Founder of Flourishing Property Solutions',
+        class:'animated zoomInLeft'
+      }
     ]
 
     this.people = [
